@@ -1,0 +1,26 @@
+{
+  "name": "capgeminiaws",
+  "version": "1.0.0",
+  "description": "This is the repo for the nodejs expressjs docker example project for the Capgemini AWS Event held on 10 October 2023",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_local": "NODE_ENV=local node server.js",
+    "start_dev": "NODE_ENV=dev node server.js",
+    "start_prod": "NODE_ENV=prod node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willemevenwel/capgeminiawsevent10oct.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willemevenwel/capgeminiawsevent10oct/issues"
+  },
+  "homepage": "https://github.com/willemevenwel/capgeminiawsevent10oct#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
