@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
  
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
-  console.log(`Running on http://${HOST}:${PORT}`);
-  console.log(`Running on http://${HOST}:${PORT}`);
+  console.log(`Hello Capgemini AWS Community Event 10 October 2023`);
+  console.log(`Environment: ${process.env.ENVIRONMENT}`);
+  console.log(`Email credits per day: ${process.env.EMAIL_CREDITS}`);
 });
