@@ -11,10 +11,13 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send(`Hello Capgemini AWS Community Event 10 October 2023<br/>Environment: ${process.env.ENVIRONMENT}<br/>Email credits per day: ${process.env.EMAIL_CREDITS}`);
+  let msg = `Hello Capgemini AWS Community Event 10 October 2023<br/>Environment: ${process.env.ENVIRONMENT}<br/>Email credits per day: ${process.env.EMAIL_CREDITS}`
+  console.log(msg);
+  res.send(msg);
 });
  
 app.listen(PORT, HOST, () => {
+  console.log(`Iteration: 61`);
   console.log(`Running on http://${HOST}:${PORT}`);
   console.log(`Hello Capgemini AWS Community Event 10 October 2023`);
   console.log(`Environment: ${process.env.ENVIRONMENT}`);

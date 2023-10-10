@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 8080
+EXPOSE 3000
 CMD [ "npm", "run", "start_local" ]
 
 # Production stage
@@ -16,7 +16,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 8080
+EXPOSE 3000
 CMD [ "npm", "run", "start_dev" ]
 
 # Production stage
@@ -25,5 +25,5 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install --only=production
 COPY . .
-EXPOSE 8080
+EXPOSE 3000
 CMD [ "npm", "run", "start_prod" ]
