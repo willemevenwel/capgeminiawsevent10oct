@@ -44,6 +44,5 @@ docker build -t capgeminiaws10oct2023-dev . --target dev
 docker tag capgeminiaws10oct2023-dev:latest 369729634060.dkr.ecr.eu-central-1.amazonaws.com/capgeminiaws10oct:latest
 docker push 369729634060.dkr.ecr.eu-central-1.amazonaws.com/capgeminiaws10oct:latest
 
-
 Docker image healthcheck:
 CMD-SHELL,curl - f http://localhost:3000/ || exit 1⁠
